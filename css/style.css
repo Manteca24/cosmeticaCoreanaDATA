@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* --- */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Cabecera */
+
+.publi {
+  padding: 10px;
+  text-align: center;
+  background-color: #e89a9f;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.headertop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.ham {
+  width: 95px;
+  color: #009d95;
+  display: none;
+}
+
+.ham svg {
+  width: 24px;
+}
+
+.menu {
+  transition: all .5s ease;
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  color: #009d95;
+}
+.usuario {
+  display: flex;
+  gap: 10px;
+}
+.usuario svg {
+  width: 25px;
+}
+
+.close {
+  display: none;
+}
+
+/* END CABCERA */
+
+
+.masthead {
+  position: relative;
+}
+
+.masthead img {
+  width: 100%;
+}
+
+.mastheadblur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content:flex-end;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #00000085;
+}
+
+.mastheadblur p {
+  font-size: 14px;
+  
+}
+
+.mastheadblur h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.mastheadblur button {
+  background-color: #e89a9f;
+  color: white;
+  border: 1px solid #e89a9f;
+  padding: 10px 30px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  padding: 20px;
+}
+
+
+.bubble {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e89a9f;
+}
+
+@media (width <= 880px) {
+  .ham, .close {
+    cursor: pointer;
+  }
+  .ham {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    z-index: 999;
+  }
+  .menu ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .visible {
+    left: 0;
+  }
+  .close {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+
+
+
+
+
+
+
+
